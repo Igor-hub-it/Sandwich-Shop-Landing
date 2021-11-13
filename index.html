@@ -8,53 +8,69 @@
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="">
-    <header class="flex justify-between p-10">
-      <div class="logo bg-white text-center h-26 w-48 rounded">логотип</div>
-      <div class="partners flex items-end gap-5">
-        <div class="partner1 partner w-28 h-10">
-          <img src="imgs/partnerMagnit.png" class="w-full h-full" alt="">
+    <header class="flex justify-between px-10 py-5">
+      <div class="logo bg-white text-center h-12 w-32 rounded">логотип</div>
+      <div class="navBar flex items-center gap-10">
+        <div class="telephone hidden cursor-pointer sm:flex gap-2 items-center border-b hover:border-white transition duration-500 ease-in-out">
+          <div class="telephone_img w-4 h-4"><img src="/imgs/telephone.png" alt=""></div>
+          <div class="telephone_text text-white">+7 (900) 900 90 90</div>
         </div>
-        <div class="partner2 partner rounded w-28 h-10">
-          <img src="imgs/sber.png" alt="">
+        <div class="email hidden cursor-pointer sm:flex gap-2 items-center border-b hover:border-white transition duration-500 ease-in-out">
+          <div class="email_img w-5 h-5 mt-1"><img src="/imgs/email.png" alt=""></div>
+          <div class="email_text text-white">example@gmail.com</div>
         </div>
-        <div class="partner3 partner w-28 h-10 rounded">
-          <img src="imgs/kfc.png" alt="">
-        </div>
-        <!-- <div class="partner4 partner w-28 h-10 bg-white">4</div>
-        <div class="partner5 partner w-28 h-10 bg-white">5</div>
-        <div class="partner6 partner w-28 h-10 bg-white">6</div> -->
       </div>
     </header>
     <main>
-      <div class="ourProducts w-full bg-yellow-300 py-10 rounded mt-10">
-        <p class="text-4xl text-black font-bold pb-10 text-center">Наши Продукты</p>
+      <div class="ourProducts w-full bg-yellow-300 py-10 rounded mt-8">
+        <p class="text-3xl text-black font-bold pb-10 text-center">Наши Продукты</p>
         <div class=" flex justify-evenly">
-          <div class="sandwich1 w-60 h-96 bg-black rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
+          <div class="sandwich1 w-60 h-96 rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
             <img src="imgs/sandwich_1.jpg" class="w-full h-1/2 rounded" alt="">
             <div class="descriptionSandwich1 absolute inset-x-0 bottom-10">
-              <p class="text-xl text-center text-white pb-3">Состав:</p>
-              <p class="text-xl text-center text-white">Помидоры, огурцы, ветчина, сыр, хлеб.</p>
+              <p class="text-xl text-center text-white leading-10">Состав:<br>Помидоры, огурцы, ветчина, сыр, хлеб.</p>
             </div>
           </div>
-          <div class="sandwich2 w-60 h-96 bg-black rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
+          <div class="sandwich2 w-60 h-96 rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
             <img src="imgs/sandwich_2.jpg" class="w-full h-1/2 rounded" alt="">
             <div class="descriptionSandwich1 absolute inset-x-0 bottom-10">
-              <p class="text-xl text-center text-white pb-3">Состав:</p>
-              <p class="text-xl text-center text-white">Помидоры, огурцы, ветчина, сыр, хлеб.</p>
+              <p class="text-xl text-center text-white leading-10">Состав:<br>Помидоры, огурцы, ветчина, сыр, хлеб.</p>
             </div>
           </div>
-          <div class="sandwich3 w-60 h-96 bg-black rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
+          <div class="sandwich3 w-60 h-96 rounded shadow-2xl transform hover:-translate-y-6 transition duration-700">
             <img src="imgs/sandwich_3.jpg" class="w-full h-1/2 rounded" alt="">
             <div class="descriptionSandwich1 absolute inset-x-0 bottom-10">
-              <p class="text-xl text-center text-white pb-3">Состав:</p>
-              <p class="text-xl text-center text-white">Помидоры, огурцы, ветчина, сыр, хлеб.</p>
+              <p class="text-xl text-center text-white leading-10">Состав:<br>Помидоры, огурцы, ветчина, сыр, хлеб.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="aboutUs w-full bg-white rounded mt-20">
+      <div class="ourPartners w-full">
+        <div class="titleOurPartners">
+          <p class="text-center text-white text-3xl pt-3 m-auto">Наши партнеры</p>
+        </div>
+        <div class="ourPartnersSlider w-11/12 h-28 flex gap-10 py-10 px-5 m-auto overflow-x-scroll">
+          <div class="partner1 partner flex items-center">
+            <img src="imgs/partnerMagnit.png" alt="">
+          </div>
+          <div class="partner2 partner flex items-center">
+            <img src="imgs/sber.png" alt="">
+          </div>
+          <div class="partner3 partner flex items-centers">
+            <img src="imgs/kfc.png" alt="">
+          </div>
+  
+          <div class="partner4 partner bg-white">4</div>
+          <div class="partner5 partner bg-white">5</div>
+          <div class="partner6 partner bg-white">6</div>
+          <div class="partner7 partner bg-white">7</div>
+          <div class="partner8 partner bg-white">8</div>
+          <div class="partner9 partner bg-white">9</div>
+        </div>
+      </div>
+      <div class="aboutUs w-full bg-white rounded">
         <div class="titleAboutUs">
-          <p class="pt-10 pl-20 text-4xl">О нас</p>
+          <p class="pt-10 pl-20 text-3xl">О нас</p>
         </div>
         <div class="aboutUsInfo">
           <p class="mt-5 px-20 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam modi quibusdam ab nisi eaque, doloremque delectus porro obcaecati quas hic dignissimos asperiores rem repellat inventore possimus reiciendis minima consequatur sit veniam? Veritatis maiores tempora, saepe velit eum doloremque magnam impedit, voluptatum doloribus explicabo dignissimos id ea odio quis quas earum? Placeat illum ducimus libero architecto necessitatibus, suscipit quisquam harum veniam totam eius qui, id in quia quae laudantium repellat dolor! Est et enim nulla a. Atque soluta illum rerum omnis? Iusto debitis ab distinctio. Officia nisi soluta eaque architecto quos! Commodi earum tenetur recusandae saepe, dolores ipsum ut eveniet officiis?</p>
@@ -63,7 +79,9 @@
       </div>
     </main>
     <footer class="w-full h-28 mt-10">
+      <div class="conrainer w-11/12 h-28 m-auto grid grid-cols-4 gap-5">
 
+      </div>
     </footer>
 
 
